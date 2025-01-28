@@ -76,14 +76,5 @@ client.on("guildMemberAdd", (member) => {
   member.send("Welcome to the server!");
 });
 
-client.on("ready", () => {
-  const channel = client.channels.cache.get("1333478859269607442");
-
-  //   if (channel) {
-  //     channel.send("## pidhi");
-  //   } else {
-  //     console.log("Channel not found. Make sure the bot has access.");
-  //   }
-});
 
 client.login(process.env.DISCORD_API);
